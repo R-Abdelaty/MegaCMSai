@@ -5,13 +5,14 @@
 }
 
 .sidebar {
-  width: 260px;
+  width: 280px;
   padding: 20px;
   color: #ffffff;
   background: #202123;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  overflow-y: auto;
 }
 
 .brand {
@@ -38,7 +39,8 @@
   gap: 8px;
 }
 
-.conversation-list h2 {
+.conversation-list h2,
+.sidebar-menu h2 {
   margin: 0 0 4px;
   color: #a8a8ad;
   font-size: 12px;
@@ -58,6 +60,33 @@
 
 .conversation-button:hover {
   background: #2b2c2f;
+}
+
+.sidebar-menu {
+  display: grid;
+  gap: 12px;
+}
+
+.sidebar-button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.sidebar-grid-button {
+  min-height: 54px;
+  padding: 8px;
+  color: #dddddf;
+  background: #2b2c2f;
+  border: 1px solid #44454a;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.sidebar-grid-button:hover {
+  background: #36373b;
+  border-color: #606167;
 }
 
 .chat-page {
